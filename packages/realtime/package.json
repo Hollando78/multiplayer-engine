@@ -1,0 +1,45 @@
+{
+  "name": "@multiplayer-engine/realtime",
+  "version": "0.1.0",
+  "description": "Real-time multiplayer infrastructure with WebSocket and Redis pub/sub",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@multiplayer-engine/core": "workspace:*",
+    "socket.io": "^4.7.0",
+    "socket.io-client": "^4.7.0",
+    "ioredis": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0"
+  },
+  "keywords": [
+    "game-engine",
+    "realtime",
+    "websocket",
+    "redis",
+    "multiplayer"
+  ],
+  "author": "Extracted from Territory Conquest",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

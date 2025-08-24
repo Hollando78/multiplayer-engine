@@ -1,0 +1,35 @@
+{
+  "name": "@multiplayer-engine/root",
+  "version": "0.1.0",
+  "description": "Reusable multiplayer game engine extracted from Territory Conquest",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "dev": "pnpm -r --parallel dev",
+    "bootstrap": "pnpm install && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "keywords": [
+    "game-engine",
+    "multiplayer",
+    "realtime",
+    "grid-games",
+    "websocket"
+  ],
+  "author": "Extracted from Territory Conquest",
+  "license": "MIT"
+}

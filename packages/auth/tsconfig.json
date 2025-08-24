@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "**/*.test.ts", "src/PrismaAuthStorage.ts"],
+  "references": [
+    { "path": "../core" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@multiplayer-engine/auth",
+  "version": "0.1.0",
+  "description": "Universal authentication system for multiplayer games with JWT tokens and refresh cookies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "authentication",
+    "jwt",
+    "multiplayer",
+    "games",
+    "tokens",
+    "refresh"
+  ],
+  "author": "Extracted from Territory Conquest",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^20.19.11",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/express": "^4.17.21"
+  },
+  "dependencies": {
+    "@multiplayer-engine/core": "workspace:*",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "@prisma/client": "^5.19.1"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^5.0.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@multiplayer-engine/storage",
+  "version": "0.1.0",
+  "description": "Universal storage abstractions for multiplayer games with Prisma implementations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "database",
+    "storage",
+    "prisma",
+    "multiplayer",
+    "games",
+    "abstraction"
+  ],
+  "author": "Extracted from Territory Conquest",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^20.19.11"
+  },
+  "dependencies": {
+    "@multiplayer-engine/core": "workspace:*",
+    "@multiplayer-engine/auth": "workspace:*"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^5.0.0",
+    "prisma": "^5.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@multiplayer-engine/rendering",
+  "version": "0.1.0",
+  "description": "Universal rendering engine for multiplayer games with canvas, viewport management, and animations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "multiplayer",
+    "games",
+    "rendering",
+    "canvas",
+    "viewport",
+    "animations",
+    "touch"
+  ],
+  "author": "Extracted from Territory Conquest",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^20.19.11"
+  },
+  "dependencies": {
+    "@multiplayer-engine/core": "workspace:*"
+  }
+}

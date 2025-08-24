@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    
+    "baseUrl": ".",
+    "paths": {
+      "@multiplayer-engine/core": ["packages/core/src"],
+      "@multiplayer-engine/grid": ["packages/grid/src"],
+      "@multiplayer-engine/realtime": ["packages/realtime/src"],
+      "@multiplayer-engine/rendering": ["packages/rendering/src"],
+      "@multiplayer-engine/auth": ["packages/auth/src"],
+      "@multiplayer-engine/storage": ["packages/storage/src"]
+    }
+  },
+  "include": [
+    "packages/**/*",
+    "examples/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "**/build"
+  ]
+}

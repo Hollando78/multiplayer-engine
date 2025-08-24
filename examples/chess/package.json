@@ -1,0 +1,27 @@
+{
+  "name": "chess-example",
+  "version": "0.1.0",
+  "description": "Chess game implementation using multiplayer game engine",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@multiplayer-engine/core": "workspace:*",
+    "@multiplayer-engine/grid": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "chess",
+    "game-engine",
+    "example"
+  ],
+  "license": "MIT"
+}
