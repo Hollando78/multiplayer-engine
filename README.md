@@ -401,4 +401,4 @@ The engine distills these battle-tested patterns into reusable abstractions for 
 
 ---
 
-**🎯 Build your next multiplayer game in hours, not months.**
+**🎯 Build your next multiplayer game in hours, not months.**SSH authentication configured successfully
